@@ -14,7 +14,7 @@ export default (props) => {
                 height={120} 
                 width={180} 
                 data={props.data}>
-                <SparklinesLine color={props.color}/>
+                <SparklinesLine color={props.color} style={{ strokeWidth: 1 }}/>
                 <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div> 5-Day Average {props.name}: {getAverage(props.data)} {props.units}</div>
